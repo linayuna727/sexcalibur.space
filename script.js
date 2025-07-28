@@ -1,5 +1,5 @@
 // total number of images in the folder
-const totalImages = 1; // <---- Update this number to the cound of images you have
+const totalImages = 1; // <---- Update this number to the count of images you have
 let historyStack = [];
 // start with a random image when page loads
 let currentImage = Math.floor(Math.random() * totalImages) + 1;
