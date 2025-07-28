@@ -11,4 +11,4 @@ Accepted file types are:
 
 After adding your images to this folder. you need to update the totalImages value inside the script.js file on the root directory of the website..
 For example if your site has 5 images, the 2. line of script.js should be:
-const totalImages = 44
+const totalImages = 5
