@@ -1,0 +1,265 @@
+body {
+  margin: 0;
+  background-color: black;
+  color: white;
+  font-family: monospace;
+  text-align: center;
+  padding: 10px;
+}
+
+.site-title {
+  color: white;
+  font-style: italic;
+  margin-top: 20px;
+  animation: glowTitle 2s ease-in-out infinite alternate;
+}
+
+.subtitle {
+  color: rgb(230, 173, 218);
+  font-size: 1.2rem;
+  margin-top: 15px;
+  animation: glowSubtitle 2s ease-in-out infinite alternate;
+}
+
+@keyframes glowTitle {
+  from {
+    text-shadow: 0 0 5px #add8e6, 0 0 10px #add8e6, 0 0 15px #add8e6;
+  }
+  to {
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff;
+  }
+}
+
+@keyframes glowSubtitle {
+  from {
+    text-shadow: 0 0 5px #d2a2f5, 0 0 10px #d2a2f5, 0 0 15px #d2a2f5;
+  }
+  to {
+    text-shadow: 0 0 10px #a0f, 0 0 20px #a0f, 0 0 30px #a0f;
+  }
+}
+
+.nav-buttons {
+  margin-bottom: 10px;
+}
+
+button {
+  margin: 0 5px;
+  padding: 5px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: 2px solid;
+  background: transparent;
+  font-family: monospace;
+  transition: 0.1s ease;
+  border-radius: 5px;
+  position: relative;
+  top: 0;
+}
+
+button:active {
+  top: 2px;
+  box-shadow: 0 0 20px white;
+  animation: flashBackground 0.2s;
+}
+
+@keyframes flashBackground {
+  0% {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+.blue-btn {
+  border-color: #00f;
+  color: #00f;
+  box-shadow: 0 0 8px #00f;
+}
+
+.blue-btn:hover {
+  box-shadow: 0 0 15px #00f;
+}
+
+.pink-btn {
+  border-color: hotpink;
+  color: hotpink;
+  box-shadow: 0 0 8px hotpink;
+}
+
+.pink-btn:hover {
+  box-shadow: 0 0 15px hotpink;
+}
+
+.green-btn {
+  border-color: rgb(108, 255, 97);
+  color: rgb(108, 255, 97);
+  box-shadow: 0 0 8px rgb(108, 255, 97);
+}
+
+.purple-btn:hover {
+  box-shadow: 0 0 15px #a0f;
+}
+
+.red-btn {
+  border-color: #ff3366;
+  color: #ff3366;
+  box-shadow: 0 0 8px #ff3366;
+}
+
+.red-btn:hover {
+  box-shadow: 0 0 15px #ff3366;
+}
+
+img {
+  max-width: 90vw;
+  max-height: 60vh;
+  margin-top: 10px;
+}
+
+#randomBtn {
+  display: block;
+  margin: 20px auto 5px auto;
+}
+
+#imageNumber {
+  margin: 0;
+  color: white;
+  text-shadow: 0 0 5px hotpink, 0 0 10px hotpink;
+  font-family: monospace;
+}
+
+footer {
+  margin-top: 40px;
+  font-size: 0.9rem;
+  font-family: monospace;
+}
+
+footer a {
+  color: lightblue;
+  text-decoration: none;
+}
+
+h3, h4 {
+  color: #00ffff;
+  text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff, 0 0 15px #00ffff;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+h4 {
+  color: #a0f;
+  text-shadow: 0 0 5px #a0f, 0 0 10px #a0f, 0 0 15px #a0f;
+  font-size: 1.1rem;
+}
+
+.content p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+/* Legal page content styling */
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.content p {
+  line-height: 1.6;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Glowing purple text */
+.glow-purple {
+  color: #a0f;
+  font-weight: bold;
+  text-shadow: 0 0 5px #a0f, 0 0 10px #a0f, 0 0 15px #a0f;
+}
+
+/* Button spacing after paragraphs */
+p + button {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  .site-title {
+    margin-top: 10px;
+    font-size: 1.5rem;
+  }
+
+  .subtitle {
+    margin-top: 10px;
+    font-size: 1rem;
+  }
+
+  h3, h4 {
+    font-size: 1rem;
+  }
+
+  .content p {
+    font-size: 0.9rem;
+  }
+
+  button {
+    padding: 5px 10px;
+    font-size: 0.9rem;
+  }
+
+  img {
+    max-width: 80vw;
+    max-height: 50vh;
+  }
+}
+
+@media (max-width: 850px) {
+  .content {
+    padding: 20px 30px;
+  }
+}
+
+/* Completion popup styling */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background: #1a1a1a;
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+  border: 2px solid #a0f;
+  box-shadow: 0 0 20px #a0f;
+}
+
+.popup-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  animation: rainbowGlow 3s linear infinite;
+}
+
+@keyframes rainbowGlow {
+  0% { text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000; }
+  16% { text-shadow: 0 0 10px #ff8800, 0 0 20px #ff8800; }
+  33% { text-shadow: 0 0 10px #ffff00, 0 0 20px #ffff00; }
+  50% { text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00; }
+  66% { text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff; }
+  83% { text-shadow: 0 0 10px #a0f, 0 0 20px #a0f; }
+  100% { text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000; }
+}
