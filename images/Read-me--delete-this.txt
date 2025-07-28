@@ -1,0 +1,14 @@
+!!----------
+You should delete this file after you finish reading this and before publishing your site.
+!!----------
+
+This is the folder where you can keep the images to be shown on the website.
+you can add images to the site via naming them by their number. for example 5 images would be contained as:
+1.png 2.png 3.png 4.png 5.png
+
+Accepted file types are:
+.png, .jpeg, .jpg, .webp, .gif
+
+After adding your images to this folder. you need to update the totalImages value inside the script.js file on the root directory of the website..
+For example if your site has 5 images, the 2. line of script.js should be:
+const totalImages = 44
