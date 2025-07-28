@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>sexcalibur.space</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="site-title">sexcalibur.space</h1>
+    <h2 class="subtitle">about</h2>
+    <div class="content">
+    <h3>ney?</h3>
+    <p> sexcalibur.space, casper excalibur markasının mükemmel ürünlerinin mükemmelliği sonucunda oluşmuş, turksigara.net benzeri bir sitedir.</p>
+    <h3>S... excalbiur... sexcalibur!? WTFF????</h3>
+    <p> bu laptopu ilk aldığım zaman arkadaşlarımdan biri ciazın adının başına s koyunca "sex" kelimmesinin oluştuğunu belirtti ve o günden beri bu laptopa sexcalibur diye hitap ediyorum. ilk duyduğumda aşırı komiğime gitmişti şu anda şakanın biraz modası geçmiş olsada ürünle yaşadıklarımıda hesaba katarsak bu sitenin varlığına ve bu isme sanırım biraz anlam katabiliriz ૮ ˶ᵔ ᵕ ᵔ˶ ა</p>
+    <h3>neden bu cihazı bu kadar sevmiyorsun?</h3>
+    <p>ilk izlenimde "oo gaming laptop, iyidir herhalde" gibi görünebilir ama inanın bana, gerçektende öyle değil, çok fazla ısınıyor, linux desteği yok denecek kadar az, pil ömrü gerçekten ama gerçekten berbat (okulda sunum yaparken 5 kere pili bitip kapandı) olması ve sadece bunlarla sınırlı kalmayıp üstüne marka olarak casper'ında sattığı ürünü umursamamsınıda ekleyebilirim. şimdilik bunlara çok fazla değinmeyeceğim ancak kişisel bir site açtığım zaman bunun hakkında uzun bir blog yazısı yazmak planımda var. öyle bir şey yaparsam ilk işim buraya linklemek olacak :3 </p>
+    <h3>neden böyle bir site açmaya karar verdin?</h3>
+    <p>bu tarz saçma, gereksiz ancak sonucu birazda olsa komik ve eğlenceli olan alan adlarının hayranı olarak her zaman bu tür bir site açmak istemişimdir. uzun bir süredir kendime domain almamda gerekiyordu ve laptopum adına bi domain alıp böyle bir site açarsam hem web hosting hakkında bir şeyler öğrenebileceğimi ve arkadaşlarım arasoda gülebileceğim hoş bir şey olabileceğini düşünerek bu domaini satın aldım ve aldığım gece bu siteyi oluşturdum. açıkçası sonuçla mutluyum ve umarım sende sitemi beğenmişsindir ˃ 𖥦 ˂ </p>
+    <h3>siteye başka bir şey ekleyecek misin?</h3>
+    <p>fotoğraf dışında siteye büyük ihtimal başka bir şey eklemem, bu sade haliyle yeterince güzel olduğunu düşünüyorum.</p>    
+    <h3>sitede şu anda kaç tane fotoğraf var?</h3>
+    <p>şu anda sitede <span id="photoCount" class="glow-purple">...</span> tane fotoğraf var.</p>
+    <h3>siteye fotoğraf eklemek istiyorum</h3>
+    <p>fotoğraf ekleme isteklerine her zaaman açığım ve topluluğun aklında olanları görmek gerçekten çok hoş olur, istersen kendi sexcaliburunla bir fotoğraf, istersende galerinden rastgele bir şey gönderebilirsin, <b>NSFW ve illegal bir şey olmasın yeter :3</b> gönderdiğiniz fotoğrafara credit vereceğim ve sexcalibur.space yazısını isterseniz ben halledebilirim :3 bana ulaşmak için aşağıdaki butonu kullanabilirsin :3c </p>
+    <button class="green-btn" onclick="window.location.href='mailto:hi@sexcalibur.space?subject=sexcalibur.space%20foto%C4%9Fraf%20ekleme%20iste%C4%9Fi&body=mrb%2C%20sexcalibur.space%20e%20kendime%20ait%20olan%20bir%20foto%C4%9Fraf%C4%B1%20eklemek%20istiyorum.%0A%5Bl%C3%BCtfen%20sorular%C4%B1%20maili%20g%C3%B6ndermeden%20%C3%B6nce%20cevaplay%C4%B1n%5D%0A%0Asoru%3A%20foto%C4%9Fraf%20sexcalibur%20bar%C4%B1nd%C4%B1r%C4%B1yor%20mu%3F%0Acevap%3A%0A%0Asoru%3A%20foto%C4%9Fraf%20size%20mi%20ait%3F%0Acevap%3A%0A%0Asoru%3A%20credit%20verilece%C4%9Fi%20zaman%2C%20hangi%20isimle%20hitap%20edilmek%20istersiniz%3F%20(bu%20sosyal%20medyada%20kulland%C4%B1%C4%9F%C4%B1n%C4%B1z%20bir%20ad%2C%20discord%20ad%C4%B1n%C4%B1z%20veya%20bir%20alias%20olabilir)%0Acevap%3A'">mail gönder!</button>
+    </div>
+
+    <div class="nav-buttons">
+      <button class="blue-btn" onclick="window.location.href='../index.html'">back</button>
+      <button class="pink-btn" onclick="redirectToEnglish()">view in English</button>
+	</div>
+  </div>
+
+  <script src="../script.js"></script>
+  <script src="language-switcher.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.getElementById('photoCount').textContent = totalImages;
+    });
+  </script>
+  <!-- Language Switch Popup -->
+  <div id="languagePopupOverlay" class="popup-overlay">
+    <div class="popup-content">
+      <h2 class="popup-title">Switch to English?</h2>
+      <p>It looks like your browser is not in Turkish and you may not understand this page. <br> However, there is an English version avalible. <br> <br> Would you like to view this page in English?</p>
+      <button class="blue-btn" onclick="redirectToEnglish()">Yes</button>
+      <button class="pink-btn" onclick="closeLanguagePopup()">No</button>
+    </div>
+  </div>
+</body>
+</html>
